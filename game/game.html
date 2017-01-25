@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<link href="https://fonts.googleapis.com/css?family=Audiowide" rel="stylesheet">
+	<style>
+		canvas{
+			position: absolute;
+			font-family: Audiowide, verdana, sans serif;
+			top: 5px;
+			left: 5px;
+		}
+		#main{
+			display:none;
+			visibility: hidden;
+			z-index: 0;
+		}
+		#window{
+			position: absolute;
+			border: 1px solid gray;
+			z-index: 0;
+		}
+		#input{
+			position: absolute;
+			font-size: 24pt;
+			border-radius: 15px;
+			z-index:1;
+		}
+		#input:hover{
+			background-color:#fff;
+		}
+		#input:focus {
+			outline: 0;
+		}
+		#audioControls{
+			display:none;
+		}
+	</style>
+	<title>Cellular Contamination</title>
+</head>
+<body>
+	<div>
+		<canvas id=window> 
+			Get a real browser!
+		</canvas>
+		<button id="input">START</button>
+		<canvas id=main></canvas>
+	</div>
+	<section id="audioControls">
+		<audio id="bgAudio" src="media/background.mp3" controls loop></audio>
+		<audio id="effectAudio" src="media/pop.mp3" controls></audio>
+	</section>
+	<script src='js/utilities.js'></script>
+	<script src='js/loader.js'></script>
+	<script src='js/main.js'></script>
+    <script src='js/keys.js'></script>
+	<script src='js/sound.js'></script>
+</body>
+</html>
